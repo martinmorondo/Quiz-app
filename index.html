@@ -5,39 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <div class="quiz-container" id="quiz">
+        <h1>Quiz</h1>
         <div class="quiz-header">
             <h2 id="question">Question text</h2>
             <ul>
                 <li>
-                    <input type="radio" name="answer" class="answer" id="a">
+                    <input type="radio" name="answer" class="answer form-check-input" id="a">
                     <label for="a" id="a-text">Question</label>
                 </li>
 
                 <li>
-                    <input type="radio" name="answer" class="answer" id="b">
+                    <input type="radio" name="answer" class="answer form-check-input" id="b">
                     <label for="b" id="b-text">Question</label>
                 </li>
 
                 <li>
-                    <input type="radio" name="answer" class="answer" id="c">
+                    <input type="radio" name="answer" class="answer form-check-input" id="c">
                     <label for="c" id="c-text">Question</label>
                 </li>
 
                 <li>
-                    <input type="radio" name="answer" class="answer" id="d">
+                    <input type="radio" name="answer" class="answer form-check-input" id="d">
                     <label for="d" id="d-text">Question</label>
                 </li>
 
             </ul>
         </div>
 
-        <button id="submit">Submit</button>
+        <button class="btn" id="submit" role="button">Submit</button>
     </div>
 
     <script src="./JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
