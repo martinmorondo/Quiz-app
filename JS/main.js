@@ -71,12 +71,20 @@ function loadQuiz() {
 // Obtener los datos de la pregunta actual
 const currentQuizData = quizData[currentQuestion];
 
+// Agregar una clase para iniciar la transición de desvanecimiento
+quizContainer.classList.add('fade-out');
+
 // Mostrar la pregunta y las opciones en el HTML
-questionEl.innerText = currentQuizData.question;
-aText.innerText = currentQuizData.a;
-bText.innerText = currentQuizData.b;
-cText.innerText = currentQuizData.c;
-dText.innerText = currentQuizData.d;
+setTimeout(() => {
+    questionEl.innerText = currentQuizData.question;
+    aText.innerText = currentQuizData.a;
+    bText.innerText = currentQuizData.b;
+    cText.innerText = currentQuizData.c;
+    dText.innerText = currentQuizData.d;
+
+    // Quitar la clase de desvanecimiento para iniciar la transición de aparición
+    quizContainer.classList.remove('fade-out');
+  }, 350); 
 }
 
 function deselectAnswers() {
