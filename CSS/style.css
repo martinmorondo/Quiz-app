@@ -7,15 +7,15 @@
 }
 
 body {
-    background-color: #0c0d0d;
-    background-image: linear-gradient(315deg, #1c1d1e 0%, #090c10 100%);
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;  
-    overflow: hidden;
-    margin: 0;
+  background-color: #0c0d0d;
+  background-image: linear-gradient(315deg, #1c1d1e 0%, #090c10 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 .quiz-container {
@@ -180,12 +180,32 @@ label:hover {
   opacity: .24;
 }
 
-/* button:hover {
-    background-color: #641f92;
-    outline: none;
- }  */
+.error-message {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
-/* button:focus {
-    
-    background-color: #5e3370;
-} */
+.btn-restart {
+  border: none;
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-restart:hover,
+.btn-restart:focus {
+  background-color: darkred;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out; /* Ajusta la duración de la animación según tus necesidades */
+}
+
+
+
